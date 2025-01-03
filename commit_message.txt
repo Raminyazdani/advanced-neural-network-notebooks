@@ -1,0 +1,13 @@
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(init): Add .gitignore
+
+Started the repository with a comprehensive .gitignore file to prevent committing cache files, virtual environments, data files, and model weights. This includes patterns for:
+- Python bytecode and cache (__pycache__, *.pyc)
+- Jupyter notebook checkpoints (.ipynb_checkpoints/)
+- Virtual environments (venv/, env/, .venv/)
+- Environment files (.env)
+- Data files (*.csv, *.pth)
+- Historian outputs (history/)
+
+Best practice to add .gitignore first before any other files to avoid accidentally committing unwanted files.
+
+Verified: .gitignore file created with appropriate patterns for Python/Jupyter projects.
