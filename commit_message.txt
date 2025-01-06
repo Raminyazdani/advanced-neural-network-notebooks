@@ -1,13 +1,12 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(init): Add .gitignore
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(docs): Add initial README with project vision
 
-Started the repository with a comprehensive .gitignore file to prevent committing cache files, virtual environments, data files, and model weights. This includes patterns for:
-- Python bytecode and cache (__pycache__, *.pyc)
-- Jupyter notebook checkpoints (.ipynb_checkpoints/)
-- Virtual environments (venv/, env/, .venv/)
-- Environment files (.env)
-- Data files (*.csv, *.pth)
-- Historian outputs (history/)
+Created a minimal README describing the project goals and planned contents. This establishes the project's purpose early: demonstrating neural network regularization techniques including parameter norm penalties (L1, L2, Elastic Net) and modern deep learning regularization (dropout, weight decay, early stopping).
 
-Best practice to add .gitignore first before any other files to avoid accidentally committing unwanted files.
+The README contains:
+- Project title and basic description
+- Planned notebook contents (as "coming soon")
+- Placeholder for setup instructions
 
-Verified: .gitignore file created with appropriate patterns for Python/Jupyter projects.
+This documents the project vision to guide development.
+
+Verified: README.md exists with basic project description and structure outline.
