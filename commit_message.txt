@@ -1,12 +1,11 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(docs): Add initial README with project vision
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(deps): Add requirements.txt with core dependencies
 
-Created a minimal README describing the project goals and planned contents. This establishes the project's purpose early: demonstrating neural network regularization techniques including parameter norm penalties (L1, L2, Elastic Net) and modern deep learning regularization (dropout, weight decay, early stopping).
+Added requirements.txt with the essential dependencies for PyTorch and Jupyter development:
+- torch>=2.0.0 (deep learning framework)
+- numpy>=1.21.0 (numerical computing)
+- matplotlib>=3.3.0 (visualization)
+- jupyter>=1.0.0 (interactive notebooks)
 
-The README contains:
-- Project title and basic description
-- Planned notebook contents (as "coming soon")
-- Placeholder for setup instructions
+These are the minimum dependencies needed to start implementing the notebooks. Additional dependencies (scikit-learn, pandas, torchvision) will be added as needed when implementing specific functionality.
 
-This documents the project vision to guide development.
-
-Verified: README.md exists with basic project description and structure outline.
+Verified: requirements.txt created with core PyTorch/Jupyter stack.
