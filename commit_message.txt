@@ -1,11 +1,16 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(deps): Add requirements.txt with core dependencies
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(notebook): Add parameter norm penalties notebook (L1/L2/Elastic Net)
 
-Added requirements.txt with the essential dependencies for PyTorch and Jupyter development:
-- torch>=2.0.0 (deep learning framework)
-- numpy>=1.21.0 (numerical computing)
-- matplotlib>=3.3.0 (visualization)
-- jupyter>=1.0.0 (interactive notebooks)
+Implemented the first notebook demonstrating classical regularization techniques for linear models using scikit-learn:
+- L1 Regularization (Lasso): Encourages sparsity, useful for feature selection
+- L2 Regularization (Ridge): Shrinks coefficients to prevent overfitting
+- Elastic Net: Combines L1 and L2 penalties for balanced approach
 
-These are the minimum dependencies needed to start implementing the notebooks. Additional dependencies (scikit-learn, pandas, torchvision) will be added as needed when implementing specific functionality.
+The notebook includes:
+- Data loading and preprocessing
+- Model training with different regularization strengths
+- Visualization of training/validation loss curves
+- Comparison of regularized vs unregularized models
 
-Verified: requirements.txt created with core PyTorch/Jupyter stack.
+NOTE: The data path is set to `regularization_dataset.csv` in the root directory. This should be organized into a data/ subdirectory later.
+
+Verified: parameter_norm_penalties.ipynb created with L1/L2/Elastic Net implementations (path needs correction later).
