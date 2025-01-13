@@ -1,11 +1,9 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(deps): Add scikit-learn and pandas to requirements
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(docs): Update README to document data requirements
 
-Realized the parameter penalties notebook needs scikit-learn for regression models and pandas for data loading. Added these dependencies:
-- scikit-learn>=1.0.0 (Lasso, Ridge, ElasticNet models)
-- pandas>=1.3.0 (CSV data loading and manipulation)
+Expanded README to describe the notebooks and data requirements. Added a Contents section explaining what each notebook demonstrates.
 
-These are essential for the parameter norm penalties notebook to run. Attempting to execute the notebook would reveal missing import errors for sklearn and pandas immediately, so adding them now.
+While documenting that data should be in a `data/` directory for organization, I realized the parameter_norm_penalties.ipynb notebook has the data path pointing to the root directory (`regularization_dataset.csv`) instead of `data/regularization_dataset.csv`!
 
-The path error in the notebook wasn't noticed yet - will be caught during documentation.
+This is a common discovery pattern: writing documentation helps catch inconsistencies in the implementation. The path needs to be fixed in the next step.
 
-Verified: requirements.txt updated with scikit-learn and pandas.
+Verified: README.md updated with notebook descriptions and data/ directory mention. Identified path inconsistency.
