@@ -1,9 +1,12 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(docs): Update README to document data requirements
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(fix): Fix data path to use data/ subdirectory
 
-Expanded README to describe the notebooks and data requirements. Added a Contents section explaining what each notebook demonstrates.
+Corrected the data path in `parameter_norm_penalties.ipynb` from `regularization_dataset.csv` (root directory) to `data/regularization_dataset.csv`, aligning with the documented directory structure.
 
-While documenting that data should be in a `data/` directory for organization, I realized the parameter_norm_penalties.ipynb notebook has the data path pointing to the root directory (`regularization_dataset.csv`) instead of `data/regularization_dataset.csv`!
+Changes made:
+- Updated load_data() call to use 'data/regularization_dataset.csv'
+- Removed Google Colab-specific path references
+- Path now matches the data/ directory structure documented in README
 
-This is a common discovery pattern: writing documentation helps catch inconsistencies in the implementation. The path needs to be fixed in the next step.
+This fix was discovered while documenting data requirements - a realistic pattern where documentation reveals implementation inconsistencies.
 
-Verified: README.md updated with notebook descriptions and data/ directory mention. Identified path inconsistency.
+Verified: parameter_norm_penalties.ipynb now uses correct data/ subdirectory path, matching README documentation.
