@@ -1,14 +1,17 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(docs): Create data directory with README documentation
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(notebook): Add neural network regularization notebook (dropout/weight-decay/early-stopping)
 
-Created the `data/` directory with comprehensive documentation about dataset requirements, format, and placement.
+Implemented the second notebook demonstrating modern deep learning regularization techniques using PyTorch on MNIST:
+- Dropout: Randomly deactivates neurons during training to prevent co-adaptation
+- Weight Decay: L2 penalty applied directly in the optimizer
+- Early Stopping: Halts training when validation performance plateaus
 
-The data/README.md includes:
-- Explanation of required regularization_dataset.csv file
-- CSV format specification (features and target columns)
-- Placement instructions (put CSV in data/ directory)
-- Note that MNIST is automatically downloaded by torchvision
-- Instructions for users without access to the dataset
+The notebook includes:
+- MNIST dataset loading via torchvision
+- Neural network architecture with dropout layers
+- Training loop with weight decay and early stopping
+- Visualization of training/validation curves
+- Performance comparison of different regularization techniques
 
-This provides clear instructions for users on dataset requirements and avoids fabricating any datasets (following best practices).
+This complements the parameter norm penalties notebook, showing modern deep learning approaches.
 
-Verified: data/README.md created with complete dataset documentation.
+Verified: neural_network_regularization.ipynb created with dropout, weight decay, and early stopping implementations.
