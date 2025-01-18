@@ -1,17 +1,11 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(notebook): Add neural network regularization notebook (dropout/weight-decay/early-stopping)
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(deps): Add torchvision for MNIST dataset
 
-Implemented the second notebook demonstrating modern deep learning regularization techniques using PyTorch on MNIST:
-- Dropout: Randomly deactivates neurons during training to prevent co-adaptation
-- Weight Decay: L2 penalty applied directly in the optimizer
-- Early Stopping: Halts training when validation performance plateaus
+Added torchvision to requirements.txt since the neural network regularization notebook needs it to download and load the MNIST dataset.
 
-The notebook includes:
-- MNIST dataset loading via torchvision
-- Neural network architecture with dropout layers
-- Training loop with weight decay and early stopping
-- Visualization of training/validation curves
-- Performance comparison of different regularization techniques
+However, made a mistake: used exact version specifier `torchvision==0.15.0` instead of minimum version `>=0.15.0`. This is too restrictive and will break compatibility with newer PyTorch versions that require newer torchvision versions.
 
-This complements the parameter norm penalties notebook, showing modern deep learning approaches.
+This is a common mistake when adding dependencies - developers sometimes copy exact versions instead of using minimum version specifiers for better compatibility.
 
-Verified: neural_network_regularization.ipynb created with dropout, weight decay, and early stopping implementations.
+Needs immediate fix in the next step.
+
+Verified: requirements.txt updated with torchvision, but using overly restrictive == specifier (needs fix).
