@@ -1,11 +1,13 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(deps): Add torchvision for MNIST dataset
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(fix): Fix torchvision version specifier for compatibility
 
-Added torchvision to requirements.txt since the neural network regularization notebook needs it to download and load the MNIST dataset.
+Changed torchvision version specifier from `==0.15.0` to `>=0.15.0` to allow compatible newer versions.
 
-However, made a mistake: used exact version specifier `torchvision==0.15.0` instead of minimum version `>=0.15.0`. This is too restrictive and will break compatibility with newer PyTorch versions that require newer torchvision versions.
+This follows Python best practices:
+- Use `>=` for minimum version requirements
+- Allows pip to install compatible newer versions
+- Prevents version conflicts with PyTorch updates
+- More flexible for users with different environments
 
-This is a common mistake when adding dependencies - developers sometimes copy exact versions instead of using minimum version specifiers for better compatibility.
+The exact version `==` is too restrictive and would cause installation failures when PyTorch 2.1+ is installed (which requires torchvision 0.16+).
 
-Needs immediate fix in the next step.
-
-Verified: requirements.txt updated with torchvision, but using overly restrictive == specifier (needs fix).
+Verified: requirements.txt now uses `torchvision>=0.15.0` with proper minimum version specifier.
