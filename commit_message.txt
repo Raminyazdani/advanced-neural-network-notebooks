@@ -1,13 +1,14 @@
-Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | feat(fix): Fix torchvision version specifier for compatibility
+Ramin Yazdani | Advanced Neural Network Regularization Techniques | main | WIP(docs): Expand README with setup instructions and usage guide
 
-Changed torchvision version specifier from `==0.15.0` to `>=0.15.0` to allow compatible newer versions.
+Significantly expanded the README to include detailed setup instructions, tech stack description, and how to run the notebooks.
 
-This follows Python best practices:
-- Use `>=` for minimum version requirements
-- Allows pip to install compatible newer versions
-- Prevents version conflicts with PyTorch updates
-- More flexible for users with different environments
+Added sections:
+- Tech Stack (Python 3.8+, PyTorch 2.0+, scikit-learn, NumPy, Matplotlib, Jupyter)
+- Repository Structure (file tree with descriptions)
+- Setup instructions (prerequisites, installation steps, virtual environment)
+- How to Run (starting Jupyter, opening notebooks)
+- Data Requirements (where to get/place datasets)
 
-The exact version `==` is too restrictive and would cause installation failures when PyTorch 2.1+ is installed (which requires torchvision 0.16+).
+This makes the repository more accessible to users by providing clear, step-by-step instructions. Documentation is being improved iteratively as the project matures.
 
-Verified: requirements.txt now uses `torchvision>=0.15.0` with proper minimum version specifier.
+Verified: README.md expanded with setup, structure, and usage sections.
