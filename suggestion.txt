@@ -1,0 +1,19 @@
+TYPE	FILE	LOCATOR	BEFORE_SNIPPET	PROPOSED_CHANGE	RATIONALE	STATUS
+RENAME	NNTI_Assignment8_(Q8_3).ipynb	filename	NNTI_Assignment8_(Q8_3).ipynb	parameter_norm_penalties.ipynb	Remove assignment naming, use descriptive professional name	APPLIED
+RENAME	NNTI_Assignment_(Q8_4).ipynb	filename	NNTI_Assignment_(Q8_4).ipynb	neural_network_regularization.ipynb	Remove assignment naming, use descriptive professional name	APPLIED
+TRACE	NNTI_Assignment8_(Q8_3).ipynb	cell[0] markdown	# NNTI Assignment 8 (Q8.3) **[Parameter Norm Penalties]**	# Parameter Norm Penalties (L1, L2, Elastic Net)	Remove assignment reference from title	APPLIED
+TRACE	NNTI_Assignment8_(Q8_3).ipynb	cell[0] markdown lines 3-15	Name 1: <br>\nStudent id 1: <br>\nEmail 1: <br>\n...\n**Instructions:** Read each question carefully...	Remove entire student submission block	Remove student name/ID fields and submission instructions	APPLIED
+TRACE	NNTI_Assignment_(Q8_4).ipynb	cell[0] markdown	# NNTI Assignment 8 (Q8.4)	# Neural Network Regularization Techniques	Remove assignment reference from title	APPLIED
+TRACE	NNTI_Assignment_(Q8_4).ipynb	cell[0] markdown lines 3-15	Name 1: <br>\nStudent id 1: <br>\nEmail 1: <br>\n...\n**Instructions:** Read each question carefully...	Remove entire student submission block	Remove student name/ID fields and submission instructions	APPLIED
+PATH	NNTI_Assignment8_(Q8_3).ipynb	cell[3] code	from google.colab import drive\ndrive.mount('/content/drive/')	Remove or comment out Google Colab mount	Google Colab specific, not portable	APPLIED
+PATH	NNTI_Assignment8_(Q8_3).ipynb	cell[7] code	load_data('/content/drive/MyDrive/University of Saarland/NNTI/NNTI_Assignment_8/Q8.3/regularization_dataset.csv')	load_data('data/regularization_dataset.csv')	Replace absolute Google Drive path with relative project path	APPLIED
+TRACE	README.md	line 3	**Project Type:** University Assignment/Task	Remove line	Remove explicit assignment declaration	APPLIED
+TRACE	README.md	line 8	This is Assignment 8 for the Neural Networks and Their Implementation (NNTI) course...	Professional description of regularization techniques	Replace assignment context with professional framing	APPLIED
+TRACE	README.md	lines 21-25	Submission_9_-_7072982_Syed_Rumman_Ali/	Update to match new structure	Old folder structure reference that doesn't match reality	APPLIED
+TRACE	README.md	line 43	cd Submission_9_-_7072982_Syed_Rumman_Ali	cd advanced-neural-network-notebooks or remove	Incorrect folder path instruction	APPLIED
+DOC	README.md	entire file	Current assignment-focused README	Portfolio-grade README aligned with project_identity.md	Complete rewrite to professional standard with proper sections	APPLIED
+STRUCTURE	.	missing file	(no .gitignore exists)	Create .gitignore for Python/Jupyter projects	Prevent committing cache, notebooks checkpoints, env files	APPLIED
+STRUCTURE	data/	missing directory	(no data/ directory)	Create data/ with README.md explaining dataset requirements	Document where to place regularization_dataset.csv	APPLIED
+STRUCTURE	.env.example	missing file (optional)	(no .env.example)	Create if configuration needed	For any environment-specific settings (optional)	NOT_APPLIED - Not needed; no configuration required
+DEPENDENCY	requirements.txt	missing entries	(missing torchvision, scikit-learn, pandas)	Add torchvision>=0.15.0, scikit-learn>=1.0.0, pandas>=1.3.0	Complete dependency list for both notebooks	APPLIED
+
