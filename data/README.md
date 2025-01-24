@@ -1,35 +1,33 @@
-# Dataset Documentation
+# Data Directory
 
-## Regularization Dataset
+This directory should contain the datasets required for the notebooks.
 
-**File:** `regularization_dataset.csv`
+## Required Datasets
 
-### Format
+### 1. Regularization Dataset (for `parameter_norm_penalties.ipynb`)
 
-CSV file with the following structure:
-- **Features:** 48 columns (`x0` through `x47`)
-- **Target:** 1 column (`y`)
+**Filename:** `regularization_dataset.csv`
 
-### Placement
+**Description:** Dataset for demonstrating parameter norm penalties (L1, L2, Elastic Net regularization).
 
-Place the CSV file in this directory:
-```
-advanced-neural-network-notebooks/
-└── data/
-    └── regularization_dataset.csv  <-- Place here
-```
+**Format:** CSV file with columns:
+- `x0` through `x47`: Input features (48 features)
+- `y`: Target output variable
 
-### Usage
+**How to Obtain:**
+- This dataset should be provided separately or generated
+- If you have the dataset, place it in this directory as `data/regularization_dataset.csv`
 
-The `parameter_norm_penalties.ipynb` notebook loads this dataset to demonstrate L1, L2, and Elastic Net regularization techniques.
+**Expected Location:** `data/regularization_dataset.csv`
 
-### Note on Missing Data
+### 2. MNIST Dataset (for `neural_network_regularization.ipynb`)
 
-This dataset is not included in the repository. You can:
-1. Generate synthetic data with similar characteristics
-2. Use any regression dataset with multiple features
-3. Adapt the notebook to work with your own data
+**Description:** The MNIST handwritten digit dataset is automatically downloaded by PyTorch's `torchvision.datasets.MNIST()` when you run the notebook.
 
-## MNIST Dataset
+**No manual download required** - the notebook will handle this automatically and cache it in a local directory.
 
-The `neural_network_regularization.ipynb` notebook uses the MNIST dataset, which is **automatically downloaded** by PyTorch's `torchvision.datasets.MNIST` on first run. No manual download required.
+## Notes
+
+- The `.gitignore` file is configured to exclude `*.csv` files from version control to avoid committing large datasets
+- Always use relative paths from the project root when accessing data: `data/filename.csv`
+- If you need to share datasets, consider using a data hosting service and documenting the download link here
