@@ -1,3 +1,5 @@
+# TAB-SEPARATED FORMAT: FILE[TAB]LOCATOR[TAB]BEFORE_SNIPPET[TAB]AFTER_SNIPPET[TAB]NOTES
+# Each entry represents one applied change with detailed before/after context
 FILE	LOCATOR	BEFORE_SNIPPET	AFTER_SNIPPET	NOTES
 .gitignore	new file creation	(file did not exist)	Created Python/Jupyter .gitignore with __pycache__, .ipynb_checkpoints, venv, .env, *.csv, *.pth, history/	Prevents committing cache files, notebooks checkpoints, virtual envs, data files, model weights, and historian outputs
 data/README.md	new file creation	(file did not exist)	Created data directory documentation explaining regularization_dataset.csv requirements and MNIST auto-download	Documents dataset requirements and expected file placement

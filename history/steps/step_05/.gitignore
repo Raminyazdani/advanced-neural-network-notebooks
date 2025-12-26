@@ -59,6 +59,3 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
-
-# History folder (git historian outputs)
-history/
