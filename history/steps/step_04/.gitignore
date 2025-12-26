@@ -41,7 +41,7 @@ env/
 .DS_Store
 Thumbs.db
 
-# Data (large files should not be committed)
+# Data
 *.csv
 *.h5
 *.hdf5
