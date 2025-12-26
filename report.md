@@ -118,3 +118,89 @@ All items logged with TYPE, FILE, LOCATOR, BEFORE_SNIPPET, PROPOSED_CHANGE, RATI
 
 ---
 
+## Phase 3: Portfolio-Readiness Changes (APPLIED)
+
+### 3.1 Infrastructure Files Created
+
+**Created .gitignore:**
+- Python cache files (__pycache__, *.pyc)
+- Jupyter checkpoints (.ipynb_checkpoints)
+- Virtual environments (venv/, ENV/)
+- IDE files (.vscode/, .idea/)
+- Data files (*.csv, *.h5, *.pkl)
+- Model checkpoints (*.pth, *.pt)
+- Environment variables (.env)
+- History folder (history/) - for git historian outputs
+
+**Created data/ directory:**
+- data/README.md explaining dataset requirements
+- Documents regularization_dataset.csv format and placement
+- Notes MNIST auto-download via torchvision
+
+### 3.2 Notebook Renaming & Refactoring
+
+**File renames:**
+1. `NNTI_Assignment8_(Q8_3).ipynb` → `parameter_norm_penalties.ipynb`
+2. `NNTI_Assignment_(Q8_4).ipynb` → `neural_network_regularization.ipynb`
+
+**parameter_norm_penalties.ipynb changes:**
+- Cell[0]: Replaced assignment header with professional description of L1/L2/Elastic Net
+- Cell[0]: Removed student name/ID/email submission block
+- Cell[3]: Commented out Google Colab drive mount code (made portable)
+- Cell[7]: Changed path from `/content/drive/MyDrive/University of Saarland/NNTI/NNTI_Assignment_8/Q8.3/regularization_dataset.csv` to `data/regularization_dataset.csv`
+- Updated comment from "Change file path as per requirement" to "Path relative to project root"
+
+**neural_network_regularization.ipynb changes:**
+- Cell[0]: Replaced assignment header with professional description of dropout/weight-decay/early-stopping
+- Cell[0]: Removed student name/ID/email submission block
+- Added key features section explaining flexible architecture
+
+### 3.3 Documentation Updates
+
+**README.md - Complete rewrite to portfolio-grade:**
+- Professional title: "Advanced Neural Network Regularization Techniques"
+- Added badges (Python version, PyTorch, License)
+- Overview section explaining problem and solution
+- Detailed "What's Inside" describing both notebooks
+- Complete Tech Stack section
+- Repository Structure diagram
+- Comprehensive Setup instructions with virtual environment
+- How to Run section for both notebooks
+- Data section explaining both datasets (CSV and MNIST)
+- Outputs section describing generated results
+- Reproducibility notes (seeds, pinned versions, relative paths)
+- Troubleshooting section (import errors, CUDA, memory, paths)
+- Key Concepts Demonstrated section
+- Contributing, License, Acknowledgments sections
+- Topics keywords for discoverability
+
+**requirements.txt - Updated dependencies:**
+- Added `torchvision>=0.15.0` (for MNIST dataset loading)
+- Added `scikit-learn>=1.0.0` (for regression models in Q8.3)
+- Added `pandas>=1.3.0` (for CSV data loading)
+- Kept existing: torch, numpy, matplotlib, jupyter
+
+### 3.4 Ledger Updates
+
+**suggestions_done.txt - Logged 10 applied changes:**
+1. .gitignore creation
+2. data/README.md creation
+3. Q8.3 filename rename
+4. Q8.4 filename rename
+5. Q8.3 cell[0] header update
+6. Q8.3 cell[3] Colab mount comment-out
+7. Q8.3 cell[7] path fix
+8. Q8.4 cell[0] header update
+9. README.md complete rewrite
+10. requirements.txt dependency additions
+
+**suggestion.txt - Updated STATUS:**
+- 15 items marked APPLIED
+- 1 item marked NOT_APPLIED (.env.example - not needed)
+
+### 3.5 Verification Status
+
+**Runability check:** Not yet performed (will verify after all changes complete)
+
+---
+
