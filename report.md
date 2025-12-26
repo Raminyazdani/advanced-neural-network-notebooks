@@ -60,5 +60,61 @@
 - **Stack:** Python 3, Jupyter, PyTorch, NumPy, Matplotlib, sklearn
 - **Domain:** Neural network regularization techniques
 
+### 1.2 Professional Identity Established
+
+Written to `project_identity.md`:
+- **Display Title:** Advanced Neural Network Regularization Techniques
+- **Repo Slug:** advanced-neural-network-notebooks (keep existing)
+- **Tagline:** Practical implementations of modern regularization methods for neural networks
+- **Topics:** neural-networks, machine-learning, deep-learning, regularization, pytorch, dropout, weight-decay, l1-regularization, l2-regularization, elastic-net, overfitting-prevention
+
+### 1.3 Naming Alignment Plan
+
+**Files to rename:**
+1. `NNTI_Assignment8_(Q8_3).ipynb` → `parameter_norm_penalties.ipynb`
+2. `NNTI_Assignment_(Q8_4).ipynb` → `neural_network_regularization.ipynb`
+
+**Content to update:**
+1. Notebook titles (remove "NNTI Assignment 8" references)
+2. Remove student name/ID/email submission blocks
+3. README.md complete rewrite (portfolio-grade)
+4. Fix absolute Google Drive paths in Q8.3
+
+**Structure to add:**
+1. `.gitignore` (Python/Jupyter standard)
+2. `data/` directory with README for dataset documentation
+
+---
+
+## Phase 2: Pre-Change Audit → suggestion.txt
+
+### 2.1 Comprehensive Scan Completed
+
+**Findings documented in suggestion.txt (16 items):**
+
+**Renaming (2 items):**
+- Both notebook filenames contain "NNTI_Assignment" prefix
+
+**Assignment Traces (6 items):**
+- Notebook titles in cell[0] markdown
+- Student submission blocks (Name/ID/Email fields + instructions)
+- README declares "University Assignment/Task"
+- README describes NNTI course context
+- README references old submission folder structure
+
+**Absolute Paths (2 items):**
+- Google Colab drive mount code in Q8.3
+- Hardcoded Google Drive path to CSV dataset
+
+**Documentation Issues (1 item):**
+- README needs complete portfolio-grade rewrite
+
+**Missing Infrastructure (3 items):**
+- No .gitignore file
+- No data/ directory with dataset documentation
+- Missing .env.example (optional)
+
+All items logged with TYPE, FILE, LOCATOR, BEFORE_SNIPPET, PROPOSED_CHANGE, RATIONALE, STATUS=NOT_APPLIED.
+
 ---
 
