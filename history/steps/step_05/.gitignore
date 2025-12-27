@@ -22,40 +22,29 @@ wheels/
 
 # Jupyter Notebook
 .ipynb_checkpoints
-*.ipynb_checkpoints/
 
 # Virtual environments
 venv/
 ENV/
 env/
-.venv
 
-# IDEs
+# IDE
 .vscode/
 .idea/
 *.swp
 *.swo
-*~
 
-# OS
-.DS_Store
-Thumbs.db
-
-# Data (large files should not be committed)
+# Data files
 *.csv
 *.h5
-*.hdf5
 *.pkl
-*.pickle
 
 # Model checkpoints
 *.pth
 *.pt
-*.ckpt
-
-# Logs
-*.log
 
 # Environment variables
 .env
-.env.local
+
+# Git Historian outputs
+history/
